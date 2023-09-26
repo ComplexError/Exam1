@@ -1,3 +1,5 @@
+//wasn't sure if it was meant to test various integers, so I made it user input dependent
+import java.util.Scanner;
 
 public class TenMaker {
     public static String makes10(int i, int j) {
@@ -12,8 +14,11 @@ public class TenMaker {
         return isTrue;
     }
     public static void main(String[] args) {
-        int i = 4;
-        int j = 7;
+        Scanner in = new Scanner(System.in);
+        System.out.println("input first integer");
+        int i = in.nextInt();
+        System.out.println("input second integer");
+        int j = in.nextInt();
         System.out.print(makes10(j, i));
     }
 }
